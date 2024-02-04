@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login&Sign-Up</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="img/webicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!-- Sign Up Start -->
+  <div class="container">
+    <div class="form-container sign-up-container">
+      <form action="Database/Sign-Up.php" method="post">
+        <h1>Create Account</h1>
+        <input id="nama_user" name="nama_user" type="text" placeholder="Name" required />
+        <input id="email_user_two" name="email_user" type="email" placeholder="Email" required />
+        <input id="pass_user_two" name="pass_user" type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <!-- Sign Up End -->
+
+    <!-- Sign In Start -->
+    <div class="form-container sign-in-container">
+      <form action="Database/Sign-In.php" method="post">
+        <h1>Login</h1>
+        <input id="email_user" name="email_user" type="email" placeholder="Email" required />
+        <input id="pass_user" name="pass_user" type="password" placeholder="Password" required />
+        <a href="reset_password.html">Forgot your password?</a>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+    <!-- Sign In End -->
+
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us, please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start your journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript/script.js"></script>
+
+</body>
+</html>
